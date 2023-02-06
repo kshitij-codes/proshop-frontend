@@ -16,7 +16,7 @@ const CartScreen = () => {
     const { cartItems } = cart
 
     const checkoutHandler = () => {
-        navigate('/login?redirect=shipping')
+        navigate('/login?redirect=/shipping')
     }
     
 
