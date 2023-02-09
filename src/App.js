@@ -13,8 +13,11 @@ import ShippingScreen from "./screens/ShippingScreen";
 import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
+import OrderListScreen from './screens/OrderListScreen'
 import UserListScreen from "./screens/UserListScreen";
 import UserEditScreen from "./screens/UserEditScreen";
+import ProductListScreen from "./screens/ProductListScreen";
+import ProductEditScreen from "./screens/ProductEditScreen";
 
 const App = () => {
   return (
@@ -34,6 +37,13 @@ const App = () => {
               <Route path="/cart/:id?" element={<CartScreen />} />
               <Route path="/admin/userList" element={<UserListScreen />}></Route>
               <Route path="/admin/user/:id/edit" element={<UserEditScreen />} />
+              <Route path="/admin/productList/:pageNumber" element={<ProductListScreen />} />
+              <Route path="/admin/productList" element={<ProductListScreen />} />
+              <Route path="/admin/product/:id/edit" element={<ProductEditScreen />}></Route>
+              <Route path="/admin/orderList" element={<OrderListScreen /> } />
+              <Route path="/search/:keyword" element={<HomeScreen />} />
+              <Route path="/page/:pageNumber" element={<HomeScreen />} />
+              <Route path='/search/:keyword/page/:pageNumber' element={<HomeScreen />} />
               <Route path='/' element={<HomeScreen />} />
             </Routes>
           </Container>
