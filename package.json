@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://proshop-api-qc59.onrender.com:5000",
+  "proxy": "https://proshop-api-qc59.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
